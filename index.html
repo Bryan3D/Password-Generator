@@ -6,6 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Password Generator</title>
     <link rel="stylesheet" href="./assest/style.css" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
   </head>
   <body>
     <div class="wrapper">
@@ -16,16 +18,51 @@
         <div class="card-header">
           <h2>Generate a Password</h2>
         </div>
+        
+        <div class="form-control">
+          <label for="length">Password Length</label>
+        </br>
+          <input type="number" name="length" id="length" min="8" max="128" value="8" />
+        </div>
+        
+      </br>
+        
         <div class="card-body">
+          <div class="form-control">
+            <label for="upper"> Uppercase </label>
+            <input id="upper" type="checkbox">
+          </div>
+          <div class="form-control">
+            <label for="lower"> Lowercase </label>
+            <input id="lower" type="checkbox">
+          </div>
+          <div class="form-control">
+            <label for="number"> Numbers </label>
+            <input id="number" type="checkbox">
+          </div>
+          <div class="form-control">
+            <label for="symbol"> Symbol</label>
+            <input id="symbol" type="checkbox">
+          </div>
           <textarea
             readonly
             id="password"
             placeholder="Your Secure Password"
             aria-label="Generated Password"
-          ></textarea>
+
+            
+          > </textarea>
+          <div><span class="material-icons">
+            content_copy
+            </span></div>
+            <i id="copy" class="fa-solid fa-copy">
+          
+            </i>
         </div>
+        
         <div class="card-footer">
-          <button id="generate" class="btn">Generate Password</button>
+          <button id="generate" class="btn">Generate Password
+          </button>
         </div>
       </div>
     </div>

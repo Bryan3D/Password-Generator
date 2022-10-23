@@ -97,6 +97,14 @@ button[disabled] {
   float: right;
 }
 
+#copy {
+  margin-left: auto;
+  color: aqua;
+}
+.material-icons::before {
+  content: "\f0c5";
+}
+
 #password {
   -webkit-appearance: none;
   -moz-appearance: none;
