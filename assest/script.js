@@ -11,6 +11,8 @@ const upperEl = document.getElementById("upper");
  const upperLetters = "ABCDEFGHIJKLMNOPQSRTUVWXYZ";  
  const numbers = "0123456789";  
  const symbol = "~!@#$%^&*()_+=|";
+ const Btn = document.querySelector("#generate");
+
 
 // Get references to the #generate element
 var generateBtn = document.querySelector("#generate");
@@ -75,7 +77,7 @@ function writePassword() {
 //  Add event listener to generate button
  generateEl.addEventListener("click", generatePassword);  
  copyEl.addEventListener("click", () => {  
-  const textarea = document.createElement("textarea");  
+  const textarea = document.createElement("#password");  
   const password = PwEl.innerText;  
   if (!password) {  
    return;  
@@ -83,10 +85,29 @@ function writePassword() {
   textarea.value = password;  
   document.body.appendChild(textarea);  
   textarea.select();  
-  document.execCommand("copy");  
+  document.execCommand("#password");  
   textarea.remove(); 
+});
   
-  // Alert to let user know password was copied
-  alert("Copying the password to the clipboard");  
- });  
+// Add event listener to generate button
 
+  // Alert to let user know password was copied
+  function copyClip() {
+    // Get the text field
+    var copyText = document.getElementById("password");
+  
+    // Select the text field
+    copyText.select();
+    copyText.setSelectionRange(0, 99999); 
+  
+     // Copy the text inside the text field
+    navigator.clipboard.writeText(copyText.value);
+    alert("Your password has been copied: " + copyText.value);  
+  }
+
+  
+
+
+
+
+ 

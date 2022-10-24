@@ -26,7 +26,7 @@
         </div>
         
       </br>
-        
+        <!--  In this area, users can select their own characters -->
         <div class="card-body">
           <div class="form-control">
             <label for="upper"> Uppercase </label>
@@ -47,17 +47,14 @@
           <textarea
             readonly
             id="password"
-            placeholder="Your Secure Password"
-            aria-label="Generated Password"
-
-            
-          > </textarea>
-          <div><span class="material-icons">
-            content_copy
-            </span></div>
-            <i id="copy" class="fa-solid fa-copy">
-          
-            </i>
+            aria-label="Generated Password">
+          </textarea>
+          <div class = 'copy-password'>
+            <button class = "btn" onclick="copyClip()"><span class="material-icons">
+              content_copy
+            </span></button>
+          </div>
+     
         </div>
         
         <div class="card-footer">
