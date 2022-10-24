@@ -24,6 +24,6 @@ Password Generator webpage:
 
 https://bryan3d.github.io/PasswordGenerator_Chall03/
 
-![image](https://user-images.githubusercontent.com/10051887/196311278-c3a1b351-0ef6-4beb-8836-064c22ffd502.png)
+![image](https://user-images.githubusercontent.com/10051887/197425491-315acf3a-93ee-4b02-b4d8-ee72cbb693c8.png)
 
 
