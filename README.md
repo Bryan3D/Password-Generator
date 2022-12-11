@@ -1,4 +1,4 @@
-# PasswordGenerator_Chall03
+# Password Generator
 Password Generator with JavaScripts
 
 - GIVEN I need a new, secure password
